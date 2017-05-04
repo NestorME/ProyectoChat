@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+}
+
+
+#chat{
+    background-color: #eee;
+    margin: 0 auto 0;
+    width: 400px;
+    height: 600px;
+}
+#chat #header-chat{
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+
+}
+#caja-mensaje{
+    background-color: #A8DCF7;
+    margin: 0 auto;
+    padding: 10px;
+    width: 400px;
+}
+#caja-mensaje input{
+    border: solid 1px #4193BF;
+    outline: none;
+    padding: 10px;
+    width: 310px;
+}
+#caja-mensaje #button{
+    border: 0;
+    background-color: #4193BF;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    width: 50px;
+}
+#chat #mensajes{
+    padding: 10px;
+    height: 580px;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+#chat #mensajes .mensaje-autor .contenido{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    display: inline-block;
+    font-size: 13px;
+    padding: 15px;
+    vertical-align: top;
+    width: 280px;
+}
+#chat #mensajes .mensaje-autor{
+    color: #777;
+    font-style: italic;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+#chat #mensajes .mensaje-autor{
+    display: inline-block;
+    margin-right: -6px;
+    margin-top: 10px;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+}
+#messages {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#messages li {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    display: inline-block;
+    font-size: 13px;
+    padding: 15px;
+    vertical-align: top;
+    width: 280px;
+}
+#messages li:nth-child(odd) {
+    background-color: #3990BF;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+    padding: 15px;
+    vertical-align: top;
+    width: 280px;
+}
+
+#space{
+    background-color: #eee;
+    width: 280px;
+    height: 5px;
+}
+
+.login {
+    margin: 20px auto;
+    width: 300px;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #c4c4c4;
+}
+
+h1.login-title {
+    margin: -28px -25px 25px;
+    padding: 15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ADADAD;
+    text-align:center;
+    background: #f7f7f7;
+
+}
+
+.login-input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left:10px;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-input:focus {
+    border-color:#6e8095;
+    outline: none;
+}
+.login-button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #4193BF;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:0;
+}
+
+.login-lost
+{
+    text-align:center;
+    margin-bottom:0px;
+}
+
+.login-lost a
+{
+    color:#666;
+    text-decoration:none;
+    font-size:13px;
+}

@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Chat Application</title>
+    <link rel='stylesheet' href='style.css' type='text/css'/>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="chat.js"></script>
+</head>
+<body>
+<div id="chat">
+    <div id="mensajes">
+        <div class="mensaje-autor">
+            <div id="messages"></div>
+        </div>
+
+        <div class="mensaje-amigo">
+            <div class="contenido"></div>
+        </div>
+
+    </div>
+    <span id="notifyUser"></span>
+</div>
+<div id="caja-mensaje">
+    <form  action="" onsubmit="return submitfunction();" >
+        <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/>
+    </form>
+</div>
+
+<!--<div id="chat">
+<ul id="messages"></ul>
+
+</div>
+<form id="form" action="" onsubmit="return submitfunction();" >
+    <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/>
+</form>-->
+</body>
+</html>
